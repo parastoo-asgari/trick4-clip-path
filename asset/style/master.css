@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-size: 10em;
+  
+    color: white;
+  
+    font-weight: bolder;
+    font-family: 'Dancing Script', cursive;
+    text-transform: uppercase;
+}
+h1 span{
+  /* border: 1px solid red; */
+  animation:para1 2s linear infinite  ;
+  -webkit-animation:para1 3s linear infinite  ;
+}
+h1 span:nth-of-type(1){
+    animation-delay:0s;
+}
+h1 span:nth-of-type(2){
+    animation-delay:0.25s;
+}
+h1 span:nth-of-type(3){
+    animation-delay:0.75s;
+}
+h1 span:nth-of-type(4){
+    animation-delay:1s;
+}
+h1 span:nth-of-type(5){
+    animation-delay:1.25s;
+}
+h1 span:nth-of-type(6){
+    animation-delay:1.75s;
+}
+h1 span:nth-of-type(7){
+    animation-delay:2s;
+}
+h1 span:nth-of-type(8){
+    animation-delay:2.25s;
+}
+
+@keyframes para1 {
+    0%,100%{
+        color: #fff;
+        filter: blur(2px);
+        -webkit-filter: blur(2px);
+        text-shadow: 0 0 10px #00b3ff,
+        0 0 20px #00b3ff,
+        0 0 40px #00b3ff,
+        0 0 80px #00b3ff,
+        0 0 120px #00b3ff,
+        0 0 160px #00b3ff,
+        0 0 200px #00b3ff,
+        0 0 240px #00b3ff;
+}
+    5%,95%{
+    color: #111;
+    filter:blur(0px);
+    text-shadow: 0 0 none;
+    
+}
+    
+}
